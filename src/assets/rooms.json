@@ -1,0 +1,43 @@
+{
+	"hydroponics" : {
+		"label"					: "Basic Hydroponics",
+		"cost" 					: 400,
+		"group" 				: "farm",
+		"complete" 				: 10,
+		"reward" 				: 1,
+		"upkeep"				: 2,
+		"image"					: "/assets/images/Room-Rack.png",
+		"actions"				: {
+		}
+	},
+	"advanced_hydroponics" : {
+		"label"					: "Aadvanced Hydroponics",
+		"cost" 					: 1000,
+		"group" 				: "farm",
+		"complete" 				: 10,
+		"reward" 				: 1.2,
+		"upkeep"				: 2,
+		"image"					: "/assets/images/Room-Rack.png",
+		"actions"				: {
+		}
+	},
+	"aquaponics" : {
+		"label"					: "Aquaponics",
+		"cost" 					: 2000,
+		"group" 				: "farm",
+		"complete" 				: 10,
+		"reward" 				: 2,
+		"upkeep"				: 4,
+		"image"					: "/assets/images/Room-Rack.png",
+		"actions"				: {
+		}
+	},
+	"office" : {
+		"label"					: "Office",
+		"cost"					: 500,
+		"group"					: "bonus",
+		"complete" 				: -0.5,
+		"reward"				: 0,
+		"upkeep" 				: -0.5
+	}
+}

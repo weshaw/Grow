@@ -1,0 +1,12 @@
+<div class="console-area">
+	<button (click)="toggle()">Console</button>
+	<div [hidden]="!show" class="game-console">
+		<div class="commands">
+			<div class="command" *ngFor="let item of commands">
+				
+				<span class="result">{{item.result}}</span>
+			</div>
+		</div>
+		<input (change)="command($event)">
+	</div>
+</div>

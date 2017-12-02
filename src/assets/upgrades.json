@@ -1,0 +1,38 @@
+{
+	"farm" : {
+		"lighting1" : {
+			"cost" : 100,
+			"upkeep" : 1,
+			"complete" : -1
+		},
+		"lighting2" : {
+			"requires" : "lighting1",
+			"cost" : 300,
+			"upkeep" : 1,
+			"complete" : -1
+		},
+		"lighting3" : {
+			"requires" : "lighting2",
+			"cost" : 700,
+			"upkeep" : 1,
+			"complete" : -1
+		},
+		"nutriant1" : {
+			"cost" : 100,
+			"upkeep" : 1,
+			"reward" : 0.3
+		},
+		"nutriant2" : {
+			"requires" : "nutriant1",
+			"cost" : 300,
+			"upkeep" : 1,
+			"reward" : 0.5
+		},
+		"nutriant3" : {
+			"requires" : "nutriant2",
+			"cost" : 700,
+			"upkeep" : 1,
+			"reward" : 0.7
+		}
+	}
+}

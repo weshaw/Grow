@@ -1,0 +1,19 @@
+{
+	"lettuce" : {
+		"cost" : 10,
+		"reward" : 1
+	},
+	"tomato" : {
+		"cost" : 10,
+		"reward" : 1
+	},
+	"flax" : {
+		"cost" : 10,
+		"reward" : 1
+	},
+	"soybeans" : {
+		"cost" : 10,
+		"reward" : 1
+	}
+
+}
