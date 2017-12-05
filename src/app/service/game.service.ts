@@ -61,6 +61,7 @@ export class GameService implements OnInit {
 			};
 		});
 	}
+
 	init_game()
 	{
 		console.log("LOADED", this.data);
@@ -75,7 +76,7 @@ export class GameService implements OnInit {
 
 	game_tick(t)
 	{
-		console.log(this.clock.day,this.clock.hour,this.clock.minute);
+		// have things subscribe to ticks
 	}
 
 
@@ -95,6 +96,12 @@ export class GameService implements OnInit {
 	add_room(o,loading=false)
 	{
 		let room = new Room(this);
+
+		if(typeof o == "string" && this.data.rooms[o])
+		{
+			o = this.data.rooms[o];
+		}
+
 		room.setup(o);
 		console.log("ROOM",room);
 		let save = false;

@@ -1,4 +1,4 @@
-<div class="rooms">
+<div class="rooms" *ngIf="ui.show.rooms">
 	<div class="room" *ngFor="let room of g.rooms" [class]="room.type">
 		<div class="room-info">
 			{{room.group}} : {{room.label}}
@@ -6,6 +6,23 @@
 		<div class="room-art"></div>
 		<div class="room-controls">
 			<button *ngFor="let b of room.buttons">{{b.label}}</button>
+		</div>
+	</div>
+</div>
+<div class="model model-shop" *ngIf="ui.show.shop">
+	<div class="category rooms">
+		<div *ngFor="let room of room_names()">
+			<div class="store-item">
+				<div class="item-name">
+					{{g.data.rooms[room].label}}
+				</div>
+				<div class="room-info">
+					${{g.data.rooms[room].cost}}
+				</div>
+				<div class="buttons">
+					<button (click)="buy_room(room)">Buy</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

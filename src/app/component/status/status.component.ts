@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../service/game.service';
+import { UiService } from '../../service/ui.service';
 
 @Component({
   selector: 'app-status',
@@ -8,10 +9,11 @@ import { GameService } from '../../service/game.service';
 })
 export class StatusComponent implements OnInit {
 
-  constructor(public g : GameService) { }
+  constructor(public g : GameService, public ui : UiService) { }
 
   ngOnInit() {
-  }
+	}
+	
   time()
   {
 		let time = this.g.clock.hour;

@@ -10,7 +10,7 @@ export class GameClock
 	ticks 		: number;
 	tick_time 	: number;
 	timer		: any;
-	g 			: GameService
+ 	g 			: GameService
 	started		: number;
 	day_length	: number;
 	day			: number;
@@ -32,6 +32,7 @@ export class GameClock
 
 	tick()
 	{
+		this.stop();
 		let time = this.gettime();
 		let delta = (time - this.last_tick) - this.tick_time;
 

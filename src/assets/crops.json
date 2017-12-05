@@ -1,19 +1,23 @@
 {
 	"lettuce" : {
 		"cost" : 10,
-		"reward" : 1
+		"reward" : 1,
+		"time"	: 3
 	},
 	"tomato" : {
 		"cost" : 10,
-		"reward" : 1
+		"reward" : 1,
+		"time"	: 6
 	},
 	"flax" : {
 		"cost" : 10,
-		"reward" : 1
+		"reward" : 1,
+		"time"	: 6
 	},
 	"soybeans" : {
 		"cost" : 10,
-		"reward" : 1
+		"reward" : 1,
+		"time"	: 5
 	}
 
 }

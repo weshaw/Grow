@@ -6,11 +6,13 @@ import {HttpModule} from '@angular/http';
 
 import { StorageService } from './service/store.service';
 import { GameService } from './service/game.service';
+import { UiService } from './service/ui.service';
 
 import { AppComponent } from './app.component';
 import { StatusComponent } from './component/status/status.component';
 import { GameComponent } from './component/game/game.component';
 import { ConsoleComponent } from './component/console/console.component';
+import { ShopComponent } from './component/shop/shop.component';
 
 
 @NgModule({
@@ -18,14 +20,15 @@ import { ConsoleComponent } from './component/console/console.component';
     AppComponent,
     StatusComponent,
     GameComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    ShopComponent
   ],
   imports: [
 	BrowserModule,
 	FormsModule,
 	HttpModule
   ],
-  providers: [StorageService,GameService],
+  providers: [StorageService,GameService,UiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
